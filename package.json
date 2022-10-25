@@ -1,0 +1,19 @@
+{
+  "name": "gamertocoder",
+  "version": "1.0.0",
+  "description": "a project for Gamertocoder competition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makimafox/Gamertocoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makimafox/Gamertocoder/issues"
+  },
+  "homepage": "https://github.com/makimafox/Gamertocoder#readme"
+}
