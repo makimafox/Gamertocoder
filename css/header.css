@@ -33,15 +33,83 @@
 
 }
 
+.hero {
+
+    width: 100%;
+    height: 100vh;
+}
+
 .hero-img {
 
     width: 100%;
+    min-width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 .bg-minigame {
 
-    width: 100%; 
-    height: 100vh; 
-    position:absolute; 
-    top: 50vw;
+    position: absolute;
+    top: 90vh;
+    z-index: 50;
+    width: 100%;
+    height: 150vh;
+    background-image: url(/img/blue.png);
+}
+
+.bg-about {
+
+    z-index: 50;
+    position: absolute;
+    top: 220vh;
+    width: 100%;
+    height: 200vh;
+    background-image: url(/img/yellow-bluesub.png);
+}
+
+.game-text {
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    width: 100%;
+    margin-top: 250px;
+    text-align: center;
+}
+
+.outer-preview {
+
+    width: 50vw;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: #FAECC9;
+    border: 8px solid #CD8C67;
+}
+
+.inner-preview {
+
+    width: 40vw;
+    height: 40vh;
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#icon-more {
+
+    position: fixed;
+    top: 90vh;
+    left: 50vw;
+    z-index: 49;
+    font-size: 24px;
+    color: rgb(255, 14, 14);
+    animation: more-animate 3s infinite;
+}
+
+@keyframes more-animate {
+    0% {top: 90vh;}
+    50% {top: 80vh;}
+    100% {top: 90vh;}
 }
