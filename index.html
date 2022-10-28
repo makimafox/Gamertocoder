@@ -5,43 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style file -->
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/deb547f563.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>body{margin: 0; padding: 0;}</style>
+    
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <a href="" class="link-logo"><img src="" alt="" class="logo-img"></a>
         <nav class="nav-list">
             <a href="" class="nav-option">h</a>
             <a href="" class="nav-option">g</a>
             <a href="" class="nav-option">a</a>
+            
         </nav>
     </div>
+
+
     <div class="hero">
         <img src="" alt="" class="hero-img">
         <i class="fa-solid fa-circle-chevron-down" id="icon-more"></i>
     </div>
+
+    
     <div class="bg-minigame">
-        <h1 class="game-text">MINIGAME</h1>
-        <div class="outer-preview">
-            <div class="inner-preview">
-                <img src="" alt="" id="preview">
+        <h1 class="minigame-text">Expore minigame</h1>
+        <hr style="margin: 0px 8vw 4vh 8vw; z-index: 25;">
+        
+        <div class="container" id="con-card">
+            <button class="btnleft" onclick="left()"><i class="fa-solid fa-circle-chevron-left"></i></button>
+            <div class="container-card">
+                <div class="card">
+                    <p class="card-text">bedwar</p>
+                    <img src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bedwars/logo.png" alt="" class="card-img">
+                </div>
+                <div class="card">
+                    <h1 class="card-text">bedwar</h1>
+                    <img src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/freecity/freecity_01.png" alt="" class="card-img">
+                </div>
+                <div class="card">d</div>
+                <div class="card">f</div>
+                <div class="card">g</div>
+                <div class="card">b</div>
+                <div class="card">a</div>
+                <div class="card">s</div>
+                <div class="card">d</div>
+                <div class="card">f</div>
+                <div class="card">g</div>
+                <div class="card"><a name="12"></a></div>
             </div>
+            <button class="btnright" onclick="right()"><i class="fa-solid fa-circle-chevron-right"></i></button>
+            
         </div>
-    </div>
-    <div class="bg-about">
+        <p style="text-align: center; color: gray;">shift + scroll</p>
+        <hr style="margin: 4vh 8vw 0vh 8vw;">
+        
         
     </div>
-
+    <div class="bg-about">
+        <div class="about-grid">
+            <h1 class="about-text">you can be anything</h1>
+            <img class="about-ph" src="img/Rectangle_13.png" alt="">
+            <p class="about-des">Create your imaginary character.Customize character as you wishes.</p>
+        </div>
+    </div>
 
 
     <script src="js/style/scroll.js"></script>
     <script src="js/api/api-assets.js"></script>
     <script src="js/api/api-minigame.js"></script>
+    <script src="js/style/cardscroll.js"></script>
 </body>
 </html>
