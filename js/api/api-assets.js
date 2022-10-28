@@ -18,6 +18,4 @@ fetch("https://gamertocoder.garena.co.th/api/assets")
 
         
     }
-    
 })
-

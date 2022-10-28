@@ -1,3 +1,4 @@
+/* header Start */
 .header {
 
     display: flex;
@@ -34,7 +35,11 @@
     text-decoration: none;
 
 }
+/* header End */
 
+
+
+/* banner Start */
 .hero {
 
     width: 100%;
@@ -50,7 +55,11 @@
     object-fit: cover;
     
 }
+/* banner End */
 
+
+
+/* background Start */
 .bg-minigame {
 
     width: 100%;
@@ -62,11 +71,15 @@
 .bg-about {
 
     width: 100%;
-    height: 100vh;
+    height: 180vh;
     background-color: #FAECC9;
     padding-top: 20vh;
 }
+/* background End */
 
+
+
+/* minigame section Start */
 .minigame-text {
 
     font-family: 'Bungee', cursive;
@@ -178,38 +191,77 @@
     justify-content: center;
     align-items: center;
 }
+/* minigame section End */
 
+
+
+/* about section Start */
 .about-grid {
+    line-height: 48px;
+    margin: auto;
+    width: 70%;
 
     display: grid;
-    grid-template-areas: 
-    't t t'
-    '1 1 2';
-    margin-left: 200px;
-    margin-right: 200px;
+    grid-template-columns: auto auto;
+    column-gap: 4vw;
+    row-gap: 4vh;
 }
 
-.about-text {
-
+.about-title {
     font-family: 'Bungee', cursive;
     font-size: 56px;
-    margin: 0;
+    margin-left: 16vw;
+}
 
-    grid-area: 't';
-
+.about-text{
+    font-family: 'Bungee', cursive;
+    font-size: 40px;
 }
 
 .about-img {
-
-    grid-area: '1';
+    /* none */
 }
 
 .about-des {
-
-    margin: 0;
-    grid-area: '2';
+    font-family: 'Biryani', sans-serif;
+    font-size: 24px;
 }
 
+.about-ending{
+    font-family: 'Press Start 2P';
+    font-size: 40px;
+    color: #C56914;
+    padding: 8vh 0 0 8vh;
+
+    text-shadow: 5px 7px 0px rgba(0, 74, 184, 0.5);
+}
+/* about section End */
+
+
+
+/* footer Start */
+/* upperfooter Start */
+.upper-footer{
+    width: 100%;
+    background: #2C2C2C;;
+
+    padding: 2vh 0 2vh 0;
+}
+/* upperfooter End */
+
+/* lowerfooter Start */
+.lower-footer{
+    width: 100%;
+    background: #434343;
+    padding: 4vh;
+}
+#gamename ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+/* lowerfooter End */
+/* footer End */
 
 
 
