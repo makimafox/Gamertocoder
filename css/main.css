@@ -1,5 +1,11 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 16px;
 }
 
 /* header Start */
@@ -87,7 +93,7 @@
 
 .container {
 
-    height: 52vw;
+    height: 48vw;
     width: 100%;
     /* background-color: #000; */
     display: flex;
@@ -149,8 +155,7 @@
     object-fit: cover;
 }
 
-.btnleft {
-
+.btnleft{
     border: 2px solid #000;
     background-color: transparent;
     padding: 10px;
@@ -163,19 +168,7 @@
     justify-content: center;
     align-items: center;
 }
-
-.btnleft i {
-
-    font-size: 24px;
-    
-}
-
-.btnright i {
-
-    font-size: 24px;
-}
 .btnright {
-
     border: 2px solid #000;
     background-color: transparent;
     padding: 10px;
@@ -187,6 +180,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.btnleft i {
+    font-size: 3vw;
+    color: #000;
+    padding-top: 2vw;
+}
+
+.btnright i {
+    font-size: 3vw;
+    color: #000;
+    padding-top: 2vw;
+}
+.btnleft i:hover {
+    font-size: 4vw;
+    transition: 0.5s;
+}
+
+.btnright i:hover {
+    font-size: 4vw;
+    transition: 0.5s;
 }
 /* minigame section End */
 
@@ -238,12 +251,42 @@
 
 /* footer Start */
 /* upperfooter Start */
-.upper-footer{
+.upper-footer {
     width: 100%;
-    background: #2C2C2C;;
-
+    background: #2C2C2C;
+    font-family: 'Inter';
     font-size: 1vw;
     padding: 2vh 0 2vh 0;
+    color: #f5f5f5;
+}
+.fa-brands,.fa-solid{
+    font-size: 1.6vw;
+    padding: 1vw .4vw 2vw .2vw ;
+    color: #f5f5f5;
+}
+.fa-brands:hover{
+    font-size: 2vw;
+    transition: 0.5s;
+}
+.fa-facebook:hover{
+    color: #4267B2;
+}
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
+.fa-square-instagram:hover{
+    background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-discord:hover{
+    color: #7289da;
+}
+.fa-envelope:hover{
+    color: #F15245;
+    font-size: 2vw;
+    transition: 0.5s;
 }
 /* upperfooter End */
 
@@ -260,6 +303,7 @@
 }
 .lower-footer img{
     width: 8vw;
+    padding-right: 2vw;
 }
 #gamename{
     display: grid;
@@ -305,6 +349,7 @@
     50% {top: 80vh;}
     100% {top: 90vh;}
 }
+
 
 
 
