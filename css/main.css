@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -116,7 +117,20 @@ body {
 
 .container-card::-webkit-scrollbar{
 
-    display: none;
+    width: 10px;
+}
+
+.container-card::-webkit-scrollbar-track {
+
+    /* border: 2px solid #000; */
+    /* background: #686868; */
+    border-radius: 20px;
+}
+
+.container-card::-webkit-scrollbar-thumb {
+
+    background: #444444;
+    border-radius: 20px;
 }
 
 .card {
@@ -157,8 +171,9 @@ body {
 }
 
 .btnleft{
-    border: 2px solid #000;
-    background-color: transparent;
+    /* border: 2px solid #000; */
+    /* background-color: transparent; */
+    border-style: none;
     padding: 10px;
     border-radius: 20px;
     position:relative;
@@ -170,8 +185,9 @@ body {
     align-items: center;
 }
 .btnright {
-    border: 2px solid #000;
-    background-color: transparent;
+    /* border: 2px solid #000; */
+    /* background-color: transparent; */
+    border-style: none;
     padding: 10px;
     border-radius: 20px;
     position: relative;
@@ -181,6 +197,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn {
+
+    background-color:rgba(255, 255, 255, 1);
 }
 
 .btn:active {
@@ -333,8 +354,16 @@ body {
 /* footer End */
 
 
+/* btn top */
+.top {
 
-
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    font-family: 'inter';
+}
 
 
 
@@ -361,6 +390,7 @@ body {
     font-size: 24px;
     color: rgb(255, 14, 14);
     animation: more-animate 3s infinite;
+    transition: ease-in-out 0.5s;
 }
 
 @keyframes more-animate {
@@ -369,6 +399,9 @@ body {
     100% {top: 90vh;}
 }
 
-
+@keyframes fading {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
 
 
