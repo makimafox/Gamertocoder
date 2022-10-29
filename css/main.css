@@ -71,7 +71,7 @@
 .bg-about {
     width: 100%;
     background-color: #FAECC9;
-    padding: 20vh 0 4vh 0;
+    padding: 8vw 0 4vw 0;
 }
 /* background End */
 
@@ -80,7 +80,7 @@
 /* minigame section Start */
 .minigame-text {
     font-family: 'Bungee', cursive;
-    font-size: 4vw;
+    font-size: 3.2vw;
     text-align: center;
     margin-top: 10vh;
 }
@@ -201,7 +201,7 @@
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 4vw;
-    row-gap: 4vh;
+    row-gap: 4vw;
 }
 
 .about-title {
@@ -228,7 +228,7 @@
     font-family: 'Press Start 2P';
     font-size: 2vw;
     color: #C56914;
-    padding: 8vh 0 4vh 0;
+    padding: 8vw 0 4vw 0;
 
     text-shadow: 5px 7px 0px rgba(0, 74, 184, 0.5);
 }
@@ -242,7 +242,7 @@
     width: 100%;
     background: #2C2C2C;;
 
-    font-size: 2vw;
+    font-size: 1vw;
     padding: 2vh 0 2vh 0;
 }
 /* upperfooter End */
@@ -251,12 +251,20 @@
 .lower-footer{
     width: 100%;
     background: #434343;
-    padding: 4vh;
+    padding: 1vw 4vw 2vw 4vw;
 }
-#gamename ul{
+.lower-footer li,ul,h3{
+    list-style-type: none;
+    margin: 0;
+    font-size: 1.2vw;
+}
+.lower-footer img{
+    width: 8vw;
+}
+#gamename{
     display: grid;
     grid-template-columns: auto auto auto;
-    
+    column-gap: 2vw;
 }
 /* lowerfooter End */
 /* footer End */
