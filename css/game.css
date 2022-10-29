@@ -240,9 +240,12 @@ ul {
 .list-container {
     display: inline-grid;
     grid-template-columns: auto auto auto auto;
-    background-image: url(/img/bg.png);
+    background-image: url(/img/papers.co-wd21-pattern-background-neon-color-texture-41-iphone-wallpaper.jpg);
     padding: 10px;
-    width: 100%
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
 }
 
 @media (max-width: 1300px) {
@@ -339,6 +342,7 @@ a {
     list-style-type: none;
     margin: 0;
     font-size: 1.2vw;
+    font-family: 'Kanit', sans-serif;
 }
 
 .lower-footer img {
@@ -350,6 +354,7 @@ a {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 2vw;
+    font-family: 'Kanit', sans-serif;
 }
 
 /* lowerfooter End */
