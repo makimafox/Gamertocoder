@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -48,7 +49,72 @@ body {
     color: #df483b;
     font-size: 1.6vw;
 }
+
+.m {
+
+    display: none;
+}
 /* header End */
+
+/* menu for m */
+
+.menu {
+
+    width: 0px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 101;
+    transition: ease-in-out 0.5s;
+}
+
+.menu nav {
+
+    display: list-item;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.icon-l {
+
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+.icon-l i {
+
+    color: #000;
+}
+
+.menu a {
+
+    font-size: 4vw;
+    text-decoration: none;
+    color: #000;
+    font-family: 'inter';
+    padding: 10px;
+
+}
+
+.c {
+
+    border-style: none;
+    background-color: transparent;
+    margin-bottom: 100px;
+    margin: 20px;
+}
+
+.c i {
+
+    font-size: 2vw;
+    color: #000;
+}
+
+
+
+
 
 
 
@@ -116,7 +182,22 @@ body {
 
 .container-card::-webkit-scrollbar{
 
-    display: none;
+    width: 10px;
+}
+
+.container-card::-webkit-scrollbar-track {
+
+    /* border: 2px solid #000; */
+    background: #000;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.container-card::-webkit-scrollbar-thumb {
+
+    background: #fff;
+    border-radius: 20px;
+    
 }
 
 .card {
@@ -132,7 +213,7 @@ body {
 
 .card:hover {
 
-    box-shadow: 12px 12px 0px 1px rgba(0, 0, 0, 1);
+    box-shadow: 12px 12px 0px 1px rgb(90, 106, 187);
 }
 
 .card-text {
@@ -157,8 +238,9 @@ body {
 }
 
 .btnleft{
-    border: 2px solid #000;
-    background-color: transparent;
+    /* border: 2px solid #000; */
+    /* background-color: transparent; */
+    border-style: none;
     padding: 10px;
     border-radius: 20px;
     position:relative;
@@ -170,8 +252,9 @@ body {
     align-items: center;
 }
 .btnright {
-    border: 2px solid #000;
-    background-color: transparent;
+    /* border: 2px solid #000; */
+    /* background-color: transparent; */
+    border-style: none;
     padding: 10px;
     border-radius: 20px;
     position: relative;
@@ -181,6 +264,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn {
+
+    background-color:rgba(255, 255, 255, 1);
 }
 
 .btn:active {
@@ -244,7 +332,7 @@ body {
 
 .about-img:hover {
 
-    box-shadow: 10px 10px 0px 1px #000;
+    box-shadow: 10px 10px 0px 1px rgb(255, 222, 77);
     transform: translate(-10px,-10px);
 }
 
@@ -269,7 +357,7 @@ body {
 /* upperfooter Start */
 .upper-footer {
     width: 100%;
-    height: 16vh;
+    height: 14vh;
     background: #2C2C2C;
     font-family: 'Inter';
     font-size: 1vw;
@@ -294,7 +382,7 @@ body {
 .fa-square-instagram:hover{
     background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
     background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
 }
 .fa-discord:hover{
@@ -317,6 +405,7 @@ body {
     list-style-type: none;
     margin: 0;
     font-size: 1.2vw;
+    font-family: 'Kanit', sans-serif;
 }
 .lower-footer img{
     width: 8vw;
@@ -326,29 +415,26 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 2vw;
+    font-family: 'Kanit', sans-serif;
 }
 /* lowerfooter End */
 /* footer End */
 
 
+/* btn top */
+.top {
+
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    font-family: 'inter';
+    font-size: 1vw;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* icon down */
 
 #icon-more {
 
@@ -359,6 +445,7 @@ body {
     font-size: 24px;
     color: rgb(255, 14, 14);
     animation: more-animate 3s infinite;
+    transition: ease-in-out 0.5s;
 }
 
 @keyframes more-animate {
@@ -367,6 +454,42 @@ body {
     100% {top: 90vh;}
 }
 
+@keyframes fading {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
 
 
 
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .nav-list {
+
+        display: none;
+    }
+    
+    .m {
+
+        display: block;
+        margin-right: 4vw;
+        border-style: none;
+        background-color: transparent;
+    }
+
+    .m i {
+
+        color: black;
+        font-size: 2vw;
+    }
+
+    .logo-img {
+        width: 20vw;
+    }
+}
