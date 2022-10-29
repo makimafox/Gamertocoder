@@ -317,6 +317,7 @@ body {
     list-style-type: none;
     margin: 0;
     font-size: 1.2vw;
+    font-family: 'Kanit', sans-serif;
 }
 .lower-footer img{
     width: 8vw;
@@ -326,6 +327,7 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 2vw;
+    font-family: 'Kanit', sans-serif;
 }
 /* lowerfooter End */
 /* footer End */
