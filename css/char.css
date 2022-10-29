@@ -1,0 +1,27 @@
+.hero {
+
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+
+    font-size: 4vw;
+}
+
+.fillter {
+
+    width: 100%;
+    height: 500px;
+    background-color: aquamarine;
+    padding: 150px;
+}
+
+.fillter ol li {
+
+    margin: 20px;
+}
