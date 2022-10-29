@@ -22,13 +22,30 @@
 <body>
     <div class="header" id="header">
         <a href="" class="link-logo"><img src="" alt="" class="logo-img"></a>
+        <button class="m" onclick="op()"><i class="fa-solid fa-bars"></i></button>
+       
         <nav class="nav-list">
             <a href="index.html" class="nav-option" title="Home">Home</a>|
             <a href="game.html" class="nav-option" title="MiniGame">Games</a>|
             <a href="" class="nav-option" title="Character">Characters</a>
         </nav>
     </div>
-
+    <div class="menu" id="menu">
+        <button class="c" onclick="cl()"><i class="fa-solid fa-xmark"></i></button>
+        <nav>
+            <nav class="icon-l">
+                <a href="index.html">home</a><i class="fa-solid fa-caret-right"></i>
+            
+            </nav>
+            <nav class="icon-l">
+                <a href="game.html">game</a><i class="fa-solid fa-caret-right"></i>
+            </nav>
+            <nav class="icon-l">
+                <a href="">character</a><i class="fa-solid fa-caret-right"></i>
+            </nav> 
+        </nav>
+        
+    </div>
 
     <div class="hero">
         <img src="" alt="" class="hero-img">
@@ -138,5 +155,6 @@
     <script src="js/api/api-assets.js"></script>
     <script src="js/api/api-minigame.js"></script>
     <script src="js/style/cardscroll.js"></script>
+    <script src="js/style/menu.js"></script>
 </body>
 </html>
