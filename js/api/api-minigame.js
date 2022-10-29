@@ -15,7 +15,16 @@ fetch("https://gamertocoder.garena.co.th/api/minigames")
             const newListItem = document.createElement('li');
             newListItem.innerText = currentData.name;
             document.getElementById("gamename").appendChild(newListItem)
-            
+        }
+
+        
+        for (let i = 0; i<data_game.length; i++) {
+            let name= document.querySelectorAll("#name")
+            name[i].innerHTML = data_game[i].name
+        }
+        for (let i = 0; i<data_game.length; i++) {
+            let name= document.querySelectorAll("#img")
+            name[i].src = data_game[i].icon
         }
     }
 })

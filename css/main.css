@@ -242,6 +242,13 @@ body {
 
 .about-img {
     width: 100%;
+    transition: ease-in-out 0.2s;
+}
+
+.about-img:hover {
+
+    box-shadow: 10px 10px 0px 1px #000;
+    transform: translate(-10px,-10px);
 }
 
 .about-des {
