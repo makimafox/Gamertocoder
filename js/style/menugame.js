@@ -1,4 +1,4 @@
-var menu = document.getElementById("menu")
+var menuu = document.getElementById("menu")
 function op() {
 
     menu.style.width = '30vw'
