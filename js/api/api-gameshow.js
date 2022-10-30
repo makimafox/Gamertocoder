@@ -15,13 +15,12 @@ fetch("https://gamertocoder.garena.co.th/api/minigames")
             const newDivItem = document.createElement("div");
             newDivItem.classList.add("card");
             const genre_array = genre;
-            let genre_string = genre_array.join()
             let html =`
             <div class="center">
                 <p onclick="changeName('${name}')"><strong>ชื่อ: ${name}</strong></p>
                 <img src="${icon}"/>
             </div>
-            <p><strong>ประเภท:</strong> ${genre_string}</p><br>
+            <p id="genre-${currentData.no}"><strong>ประเภท:</strong> &nbsp</p><br>
             <p class="detail">${description}</p><br>
             <div class="center view-image">
                 <form action="${icon}" method="get" target="_blank">
@@ -31,10 +30,17 @@ fetch("https://gamertocoder.garena.co.th/api/minigames")
             html = html.trim();
             newDivItem.innerHTML = html;
             document.getElementById("list").appendChild(newDivItem);
+
+            for(let count of genre){
+                const newSpanItem = document.createElement('span');
+                const text = document.createTextNode(count);
+                newSpanItem.appendChild(text);
+
+                document.getElementById(`genre-${currentData.no}`).appendChild(newSpanItem)
+            }
         }
     }
 })
-
 
 
 

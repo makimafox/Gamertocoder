@@ -267,22 +267,17 @@ body {
 }
 
 .btn {
-
     background-color:rgba(255, 255, 255, 1);
 }
-
 .btn:active {
-
     background-color: black;
 }
-
 .btnleft i {
     font-size: 3vw;
     color: #000;
     padding-top: 2vw;
     transition: ease-in-out 0.2s;
 }
-
 .btnright i {
     font-size: 3vw;
     color: #000;
@@ -401,11 +396,15 @@ body {
     background: #434343;
     padding: 1vw 4vw 2vw 4vw;
 }
-.lower-footer li,ul,h3{
+.lower-footer ul,h3{
     list-style-type: none;
     margin: 0;
     font-size: 1.2vw;
     font-family: 'Kanit', sans-serif;
+    color: white;
+}
+.lower-footer li{
+    font-size: 1vw;
 }
 .lower-footer img{
     width: 8vw;
@@ -423,7 +422,6 @@ body {
 
 /* btn top */
 .top {
-
     padding: 10px;
     border-radius: 20px;
     background-color: #000;
@@ -437,7 +435,6 @@ body {
 /* icon down */
 
 #icon-more {
-
     position: fixed;
     top: 90vh;
     left: 50vw;
@@ -464,32 +461,17 @@ body {
 
 
 
-
-
-
-
 @media screen and (max-width: 768px) {
-
-    .nav-list {
-
-        display: none;
-    }
-    
+    .nav-list {display: none;}
     .m {
-
         display: block;
         margin-right: 4vw;
         border-style: none;
         background-color: transparent;
     }
-
     .m i {
-
         color: black;
         font-size: 2vw;
     }
-
-    .logo-img {
-        width: 20vw;
-    }
+    .logo-img {width: 20vw;}
 }
