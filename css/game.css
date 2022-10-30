@@ -7,50 +7,49 @@
 body {
     font-size: 16px;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
 
 /* animation Start */
 @keyframes updown {
-    0% {
-        top: 0px;
-    }
-
-    50% {
-        top: 20px;
-    }
-
-    100% {
-        top: 0px;
-    }
+    0% {top: 0px;}
+    50% {top: 20px;}
+    100% {top: 0px;}
 }
 
 @keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
+    from {width: 0}
+    to {width: 100%}
 }
 
 @keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: #eb6734;
-    }
+    from, to {border-color: transparent}
+    50% {border-color: #eb6734;}
 }
-
 /* animation End */
+
+
+
 .title {
     font-size: clamp(2vw, 16px, 100vw);
     color: white;
 }
-
 .title-container {
     text-align: center;
     position: absolute;
@@ -58,6 +57,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 
 /* navbar Start */
 .header {

@@ -2,12 +2,28 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    scroll-behavior: smooth;
 }
-
 body {
     font-size: 16px;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
 
 /* header Start */
 .header {
@@ -51,7 +67,6 @@ body {
 }
 
 .m {
-
     display: none;
 }
 /* header End */
@@ -441,16 +456,26 @@ body {
 .top {
     padding: 10px;
     border-radius: 20px;
-    background-color: #000;
-    color: white;
+    background-color: white;
+    color: #eb6734;
     text-decoration: none;
     font-family: 'inter';
     font-size: 1vw;
+    transition: .2s ease-in-out;
+    position: relative;
+
+    animation-name: updown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.top:hover{
+    background: #eb6734;
+    color: white;
 }
 
 
-/* icon down */
 
+/* icon down */
 #icon-more {
     position: fixed;
     top: 94vh;
@@ -465,6 +490,11 @@ body {
     0% {top: 94vh;}
     50% {top: 80vh;}
     100% {top: 94vh;}
+}
+@keyframes updown {
+    0% {top: 0px;}
+    50% {top: 20px;}
+    100% {top: 0px;}
 }
 
 

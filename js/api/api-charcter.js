@@ -5,35 +5,24 @@ fetch("https://gamertocoder.garena.co.th/api/assets")
     }
     return response.json();
 })
-.then((data_asset) => {
-    if (typeof data_asset == "number") {
-        console.error("error data type number",data_asset)
+.then((data_characters) => {
+    if (typeof data_characters == "number") {
+        console.error("error data type number",data_characters)
     }else{
-        for(let currentData of data_game) {
-            const {genre, name, icon, description} = currentData;
-      
-            const newDivItem = document.createElement("div");
-            newDivItem.classList.add("card");
-            const genre_array = genre;
-            let genre_string = genre_array.join()
-            let html =`
-            <div class="center">
-              <p onclick="changeName('${name}')"><strong>ชื่อ: ${name}</strong></p>
-              <img src="${icon}"/>
-            </div>
-            <p><strong>ประเภท:</strong> ${genre_string}</p><br>
-            <p class="detail">${description}</p><br>
-            <div class="center view-image">
-              <form action="${icon}" method="get" target="_blank">
-                  <button class="button" type="submit">View Image</button>
-              </form>
-            </div>`;
-            html = html.trim();
-            newDivItem.innerHTML = html;
-            document.getElementById("list").appendChild(newDivItem);
-          }
+        const currentData = data_characters;
         
+        for(let currentCharater of currentData.characters){
+          console.log(currentCharater);
+          const newDivItem = document.createElement("div");
+          newDivItem.classList.add("card");
 
-        
+          let html =`
+          <div class="center">
+              <img src="${currentCharater}"/>
+          </div>`;
+          html = html.trim();
+          newDivItem.innerHTML = html;
+          document.getElementById("list").appendChild(newDivItem);
+        }      
     }
 })
