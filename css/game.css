@@ -268,9 +268,11 @@ body {
     background: #1D1D1D;
     color: white;
     border-radius: 1vw;
-    border: .1vw solid #777777;
+    border: 0.1vw solid #777777;
     white-space: nowrap;
     transition: 0.2s ease-in-out;
+    cursor: default;
+    margin-right: 4px;
 }
 .card span:hover{
     background: #F1F1F1;
