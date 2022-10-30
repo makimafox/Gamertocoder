@@ -500,6 +500,10 @@ body {
     margin-right: auto;
     width: 8vw;
     min-width: 8vw;
+    transition: 0.1s;
+}
+.con img:hover{
+    width: 10vw;
 }
 
 
