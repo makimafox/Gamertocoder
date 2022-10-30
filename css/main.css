@@ -476,6 +476,39 @@ body {
 }
 
 
+/* link download */
+
+.bg-link {
+
+    width: 100%;
+    background: rgb(63,163,255);
+    background: linear-gradient(45deg, rgba(63,163,255,1) 0%, rgba(254,210,8,1) 100%);
+    padding-top: 5vh;
+}
+
+.bg-link .con {
+
+    width: 50vw;
+    height: 20vh;
+    /* background-color: rgb(255, 255, 255); */
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+.bg-link .con img {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 8vw;
+    min-width: 8vw;
+}
+
+
 
 /* icon down */
 #icon-more {
