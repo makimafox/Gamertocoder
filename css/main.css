@@ -2,9 +2,11 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 body {
     font-size: 16px;
+    
 }
 /* width */
 ::-webkit-scrollbar {
