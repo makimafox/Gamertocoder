@@ -477,19 +477,15 @@ body {
 
 
 /* link download */
-
 .bg-link {
-
     width: 100%;
+    height: 8vw;
     background: rgb(63,163,255);
     background: linear-gradient(45deg, rgba(63,163,255,1) 0%, rgba(254,210,8,1) 100%);
-    padding-top: 5vh;
 }
-
 .bg-link .con {
-
     width: 50vw;
-    height: 20vh;
+    height: 100%;
     /* background-color: rgb(255, 255, 255); */
     margin-left: auto;
     margin-right: auto;
@@ -498,8 +494,6 @@ body {
     align-items: center;
     text-align: center;
 }
-
-
 .bg-link .con img {
 
     margin-left: auto;
