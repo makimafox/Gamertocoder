@@ -159,31 +159,31 @@ body {
     
 }
 .get-blockmango-container{
-    background: #f2f2f2;
-    top: 32vw;
-    left: 62vw;
-    width: 16vw;
-    height: 6vw;
-    position: absolute;
-    border-radius: 0.4vw;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: rgb(31, 31, 31);
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    z-index: 200;
+    right: 2%;
+    top: 86%;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    border-radius: 20%;
 }
-.get-blockmango{
-    font-size: 1vw;
-    font-family: 'Bungee', cursive;
-    background: #2c73e6;
+.get-blockmango-container a {
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.get-blockmango-container a span {
+
+    font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
-    border: 0;
-    border-bottom: .3vw solid #0f3fba;
-    border-radius: 0.4vw;
-    width: 88%;
-    height: 66%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: ease-in-out 0.2s;
 }
+
 .get-blockmango:hover{
     background: rgb(44,115,230);
     background: linear-gradient(0deg, rgba(44,115,230,1) 18%, rgba(118,232,255,1) 100%);

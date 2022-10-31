@@ -254,7 +254,7 @@ body {
     justify-self: center;
     position: relative;
     font-family: 'Kanit', sans-serif;
-    transition: 0.1s;
+    transition: ease-in-out 0.1s;
 }
 
 .card img {
@@ -308,7 +308,6 @@ ul {
 
 .card:hover {
     background: rgb(255, 239, 207);
-    background: linear-gradient(0deg, rgba(255, 239, 207, 1) 0%, rgba(255, 255, 255, 1) 100%);
     box-shadow: 5px 5px 5px rgba(50, 50, 50, .4);
     transform: translate(-5px);
 }
