@@ -204,7 +204,7 @@ body {
     width: 70%;
     overflow: hidden;
     position: absolute;
-    padding-top: 10vh;
+    padding-top: calc(10vw - 20px);
     transition: ease-in-out 0.5s;
 
     animation-name: updown;
@@ -254,6 +254,7 @@ body {
     justify-self: center;
     position: relative;
     font-family: 'Kanit', sans-serif;
+    transition: 0.1s;
 }
 
 .card img {
@@ -310,7 +311,6 @@ ul {
     background: linear-gradient(0deg, rgba(255, 239, 207, 1) 0%, rgba(255, 255, 255, 1) 100%);
     box-shadow: 5px 5px 5px rgba(50, 50, 50, .4);
     transform: translate(-5px);
-    transition: 0.1s;
 }
 
 #my-game {
@@ -393,6 +393,7 @@ a {
     font-size: 1vw;
     padding: 2vh 0 2vh 0;
     color: #f5f5f5;
+    text-align: center;
 }
 .fa-brands,.fa-solid{
     font-size: 1.6vw;
